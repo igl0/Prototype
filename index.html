@@ -67,6 +67,7 @@
   .hero-visual{
     position:relative;
     height:100vh;
+    height:100dvh;
     min-height:560px;
     overflow:hidden;
     background:var(--ink);
@@ -238,6 +239,17 @@
 
   .reveal{ opacity:0; transform:translateY(16px); transition:opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- MOBILE TUNING ---------- */
+  @media(max-width:600px){
+    section{ padding:64px 24px; }
+    .hero-content{ padding:56px 24px 64px; }
+    .marquee-section{ padding:48px 24px; }
+    .section-head{ margin-bottom:36px; }
+    .about-copy p, .film-copy p{ font-size:0.98rem; }
+    .hero-facts{ gap:24px; margin-top:32px; padding-top:22px; }
+    .hero-logo-mark .big{ font-size:clamp(2.6rem, 16vw, 4.5rem); }
+  }
 </style>
 </head>
 <body>
